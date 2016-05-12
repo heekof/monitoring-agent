@@ -1,0 +1,40 @@
+Metadata-Version: 1.1
+Name: oslo.vmware
+Version: 2.6.0
+Summary: Oslo VMware library
+Home-page: http://launchpad.net/oslo
+Author: OpenStack
+Author-email: openstack-dev@lists.openstack.org
+License: UNKNOWN
+Description: ===================================================
+         oslo.vmware --- VMware support code for OpenStack
+        ===================================================
+        
+        .. image:: https://img.shields.io/pypi/v/oslo.vmware.svg
+            :target: https://pypi.python.org/pypi/oslo.vmware/
+            :alt: Latest Version
+        
+        .. image:: https://img.shields.io/pypi/dm/oslo.vmware.svg
+            :target: https://pypi.python.org/pypi/oslo.vmware/
+            :alt: Downloads
+        
+        The Oslo VMware library provides support for common VMware operations
+        and APIs.
+        
+        * License: Apache License, Version 2.0
+        * Documentation: http://docs.openstack.org/developer/oslo.vmware
+        * Source: http://git.openstack.org/cgit/openstack/oslo.vmware
+        * Bugs: http://bugs.launchpad.net/oslo.vmware
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4

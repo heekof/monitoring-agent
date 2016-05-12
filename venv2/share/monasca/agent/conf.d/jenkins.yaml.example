@@ -1,0 +1,7 @@
+# (C) Copyright 2015 Hewlett Packard Enterprise Development Company LP
+
+init_config:
+
+instances:
+    -   name: default
+        jenkins_home: /var/lib/jenkins

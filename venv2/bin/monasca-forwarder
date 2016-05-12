@@ -1,0 +1,10 @@
+#!/home/ubuntu/env-mon/venv2/bin/python
+# PBR Generated from u'console_scripts'
+
+import sys
+
+from monasca_agent.forwarder.daemon import main
+
+
+if __name__ == "__main__":
+    sys.exit(main())

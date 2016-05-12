@@ -1,0 +1,409 @@
+CHANGES
+=======
+
+2.6.0
+-----
+
+* Updated from global requirements
+* Imported Translations from Zanata
+* Updated from global requirements
+* Updated from global requirements
+* Should not raise Exception before connection close
+* Remove explicit use of asserts
+* Move bandit into pep8
+
+2.5.0
+-----
+
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+
+2.4.0
+-----
+
+* Updated from global requirements
+
+2.3.0
+-----
+
+* Remove bandit.yaml in favor of defaults
+* Updated from global requirements
+* Update translation setup
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Imported Translations from Zanata
+* Updated from global requirements
+* Use oslo_utils reflection to get function name
+
+2.2.1
+-----
+
+* Python 3 deprecated the logger.warn method in favor of warning
+* Put py34 first in the env order of tox
+* assertIsNone(val) instead of assertEqual(None,val)
+
+2.2.0
+-----
+
+* isoformat instead of deprecated timeutils.strtime
+* Overwrite VMwareDriverException message
+* Updated from global requirements
+* Updated from global requirements
+* Clean requirements
+* Trival: Remove 'MANIFEST.in'
+
+2.1.0
+-----
+
+* Updated from global requirements
+
+2.0.0
+-----
+
+* Updated from global requirements
+* Updated from global requirements
+* Remove python 2.6 classifier
+* Remove python 2.6 and cleanup tox.ini
+* Imported Translations from Zanata
+* Updated from global requirements
+
+1.23.0
+------
+
+* Updated from global requirements
+
+1.22.0
+------
+
+* Updated from global requirements
+* Fix coverage configuration and execution
+* No need for Oslo Incubator Sync
+* Add support for SSL thumbprint when using FileWriteHandle
+* Define WithRetrieval context
+* Imported Translations from Zanata
+* Add shields.io version/downloads links/badges into README.rst
+* docs - Set pbr 'warnerrors' option for doc build
+* clean up auto-doc api build
+* do not show the full release history in the main table of contents
+* clean up readme and documentation titles
+* Change ignore-errors to ignore_errors
+* Updated from global requirements
+* Add support for using HTTP POST in VmdkWriteHandle
+* Add unit tests for FileHandle._create_connection
+* Update the documentation
+
+1.21.0
+------
+
+* Updated from global requirements
+* Use SSL thumbprints for NFC transfer
+* Updated from global requirements
+* Update bandit.yaml to the latest
+
+1.20.0
+------
+
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* flake8 - remove unused rules
+* Imported Translations from Transifex
+* Allow http connection pool size to be configured
+
+1.19.0
+------
+
+* Imported Translations from Transifex
+* Imported Translations from Transifex
+
+1.18.0
+------
+
+* Make usage doc easier to understand for library consumers
+* Updated from global requirements
+* Imported Translations from Transifex
+* Updated from global requirements
+* Updated from global requirements
+* Remove username from logs
+* Updated from global requirements
+
+1.17.0
+------
+
+* Update log level of session related logs
+* Fix mock calls
+* Updated from global requirements
+* Mask/truncate vCenter credentials in suds logs
+* Imported Translations from Transifex
+
+1.16.0
+------
+
+* Add tox target to find missing requirements
+* Updated from global requirements
+* Fix exception to string in py34
+* Updated from global requirements
+
+0.15.0
+------
+
+* Updated from global requirements
+* Updated from global requirements
+* Add in support for ManagedObjectNotFound exception
+* Deprecate unused exceptions
+* Raise VimFaultException for unknown faults
+* Exception hierarchy refactoring
+* Updated from global requirements
+* Update progress lease every 60 seconds
+* Updated from global requirements
+* Fix bandit tox environment to properly run
+* Updated from global requirements
+
+0.14.0
+------
+
+* Remove oslo namespace package
+* Port test from Nova
+* Imported Translations from Transifex
+
+0.13.1
+------
+
+* Imported Translations from Transifex
+* Revert "Raise VimFaultException for unknown faults"
+
+0.13.0
+------
+
+* Add ToolsUnavailable exception
+* Add support for dynamicProperty
+* Remove support for Python 3.3
+* Updated from global requirements
+* Remove run_cross_tests.sh
+* Use suds-jurko on Python 2
+* Updated from global requirements
+* Imported Translations from Transifex
+* Updated from global requirements
+* Raise VimFaultException for unknown faults
+* Imported Translations from Transifex
+* Add NoDiskSpaceException
+* Add utility function to get profiles by IDs
+* Add bandit to tox for security static analysis
+* Add SPBM WSDL for vSphere 6.0
+
+0.12.0
+------
+
+* Uncap library requirements for liberty
+* Cleanup README.rst and setup.cfg
+* Update to latest hacking
+* Imported Translations from Transifex
+* Revert "VMWare NSXv: Common components"
+* Updated from global requirements
+* Move pylint dependency to tox.ini
+* Move exception related tests to new module
+
+0.11.1
+------
+
+* Switch to non-namespaced module imports
+* Imported Translations from Transifex
+* Move missing tests to new oslo_vmware location
+
+0.11.0
+------
+
+* Imported Translations from Transifex
+* Add get_datastore_by_ref method to oslo.vmware
+* Change use of random to random.SystemRandom
+
+0.10.0
+------
+
+* Imported Translations from Transifex
+* Updated from global requirements
+* Handle SPBM SecurityError
+* PBM utility method to retrieve profiles of a VM
+* Updated from global requirements
+* Imported Translations from Transifex
+* Add missing links to README
+* VMWare NSXv: Common components
+
+0.9.0
+-----
+
+* Imported Translations from Transifex
+* Updated from global requirements
+* Correct usage to oslo_vmware
+* Fix line wrapping
+* Updated from global requirements
+* Correct the doc usage example
+* Fix missing project name in installation doc
+* Imported Translations from Transifex
+* Imported Translations from Transifex
+* Fix race during session creation
+* Make setup.cfg packages include oslo.vmware
+* Updated from global requirements
+* Move files out of the namespace package
+* Use ToggleLazy fixture from oslo.i18n
+* Use _is_valid_ipv6 from oslo.utils
+* Allow checking api session
+* Updated from global requirements
+* Updated from global requirements
+* Add pbr to installation requirements
+* Update urllib3 requirements
+* Workflow documentation is now in infra-manual
+* Fix re-create session during transient failures
+* Imported Translations from Transifex
+
+0.8.0
+-----
+
+* Switch to use requests/urllib3 and enable cacert validation
+* Updated from global requirements
+* Updated from global requirements
+* Enable support for python 3.x
+* Updated from global requirements
+
+0.7.0
+-----
+
+* Updated from global requirements
+* Imported Translations from Transifex
+* Activate pep8 check that _ is imported
+* Do not log when reraising an exception
+* Imported Translations from Transifex
+* Updated from global requirements
+* Add unit test for VC 5.1 web fault handling
+* Fix to get exception detail with vCenter 5.1
+* Download image API to bypass vCenter
+* Updated from global requirements
+* Updated from global requirements
+* Enable the PBM WSDL to be updated
+* Support building wheels (PEP-427)
+* Fixup autoindex.rst only if it exists
+* Supress error logs when exception is thrown
+* Fix handling of fault details
+* Fix UnboundLocalError during WebFault handling
+* Use faultstring attribute in suds.WebFault.fault
+* Imported Translations from Transifex
+* Fix the log message for progress
+* Add API to get the entity inventory path
+* VimExceptions need to support i18n objects
+* Switch to using oslo.utils
+* Use custom transport adapter for file URLs
+* getText can be called only when doc is not None
+* Updated from global requirements
+* Add unit test for suds cache expiration
+* Add a memory based shared cache
+
+0.6.0
+-----
+
+* Updated from global requirements
+* VMware: Enable vCenter SSL certificate validation
+* Add DuplicateName exception
+* Add 'details' property to VMwareDriverException
+* Enable oslo.i18n for oslo.vmware
+* Add API to enable calling module to register an exception
+* Imported Translations from Transifex
+* Add docs target and generate api docs
+* Updated from global requirements
+* Work toward Python 3.4 support and testing
+* warn against sorting requirements
+* Add exception for TaskInProgress
+* Updated from global requirements
+* Refactoring to reduce noise in log files
+* Imported Translations from Transifex
+* Add missing session parameter to get_summary
+* Updated from global requirements
+* Switch off caching to prevent cache poisoning by local attacker
+* Support for copying streamOptimized disk to file
+* Add support for the DatastoreURL object
+* Add methods to the Datastore objects
+* Imported Translations from Transifex
+* Add Pylint testenv environment
+
+0.5.0
+-----
+
+* _trunc_id to check if the session_id is not None
+* Port the Datastore and DatastorePath objects
+* Log additional details of suds faults
+* Enabled hacking check H305
+* Imported Translations from Transifex
+* Add constant for ESX datacenter path (HTTP access)
+* Store PBM wsdl in the oslo.vmware git repository
+* Bump hacking to version 0.9.2
+* Fix seek and tell in BlockingQueue
+* Add support for using extensions
+* The 'result' variable in RetryDecorator may be undefined
+* Imported Translations from Transifex
+* Fix docstrings of constructors
+* Do not log the full session ID
+* Refactor the PBM support
+* Fix wrong usage of assertRaises
+* Translations: make use of _LE, _LI and _LW
+
+0.4.0
+-----
+
+* Sync excutils from Oslo
+* Updated from global requirements
+* Use assertIsNone
+* Bump hacking to 0.9.x series
+* replace iterator.next() with next(iterator)
+* remove definitions of Python Source Code Encoding
+* Setup for translation
+* Updated from global requirements
+* cleaning up index.rst file
+* Add networkFolder in the traversal spec
+* Ensure port support does not break backward compatibility
+* replace string format arguments with function parameters
+* Support for IPv6 and Non-standard ports
+* Support 'InvalidPowerState' exception
+* Don't translate debug level logs in oslo-vmware
+* Updated from global requirements
+* Sync changes from Nova error_util.py
+* Updated from global requirements
+* Remove __del__ usage in oslo.vmware driver
+* Add a test to oslo.vmware test_image_transfer
+* import run_cross_tests.sh from incubator
+* Fix vim25:InvalidRequest when no profiles exist
+* VMware: treat cases when SOAP reply does not have a body
+* Add unittest method "test_download_flat_image"
+* Add missing unit tests for VMwareAPISession
+
+0.3
+---
+
+* Updated from global requirements
+* Fix unit tests running unnecessarily slow
+* Enable download of streamOptimized file-like
+* Fix docstrings in VMwareAPISession
+* Ensure that the pbm is not None
+* PBM related utility methods
+* Add PBM client for policy based placement
+* Updated from global requirements
+* Replace unicode() for six.text_type
+
+0.2
+---
+
+* Remove dependency on log.py from openstack/common
+* Remove vim header
+
+0.1
+---
+
+* VMware: raise more specific exceptions
+* Move image transfer code in VMware drivers to OSLO
+* Move read/write handles in VMware drivers to OSLO
+* Move API invocation code in VMware drivers to OSLO
+* Move VIM API client code in VMware drivers to OSLO
+* Add eventlet requirement
+* Move utility methods in VMware drivers to OSLO
+* Import necessary files from openstack.common
+* Initial checkin for Oslo VMware Library generated using oslo-cookiecutter

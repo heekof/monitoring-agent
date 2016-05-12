@@ -1,0 +1,6 @@
+# (C) Copyright 2015 Hewlett Packard Enterprise Development Company LP
+
+init_config:
+
+#instances:
+#    - server: http://localhost:5984
