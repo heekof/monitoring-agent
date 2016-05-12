@@ -28,8 +28,8 @@ MODLIBS=        $(LOCALMODLIBS) $(BASEMODLIBS)
 VERSION=	2.7
 srcdir=		.
 
-abs_srcdir=	/home/ubuntu/env-mon/Python-2.7.11
-abs_builddir=	/home/ubuntu/env-mon/Python-2.7.11
+abs_srcdir=	/home/ubuntu/monitoring-agent/Python-2.7.11
+abs_builddir=	/home/ubuntu/monitoring-agent/Python-2.7.11
 build=		x86_64-unknown-linux-gnu
 host=		x86_64-unknown-linux-gnu
 
