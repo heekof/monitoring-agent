@@ -50,5 +50,9 @@ clear
   131  cd ..
 sudo /home/vagrant/monitoring-agent/Python-2.7.11/venv/bin/monasca-setup --username mini-mon --password password --project_name mini-mon --service streaming-testbed --keystone_url http://157.159.232.218:35357/v3 --monasca_url http://157.159.232.217:8070/v2.0 --overwrite
 
+------- streaming with Vlc 
 
+cvlc -vvv /vagrant/big_buck_bunny_360p_50mb.flv :norm=ntsc :v4l2-width=320 :v4l2-height=240 :v4l2-standard=45056 :channel=1 --no-sout-audio --sout '#transcode{vb="1600",vcodec=h264,acodec=mpga,venc=ffmpeg}:rtp{proto=udp,mux=ts,dst=192.168.1.11,port=9001}' --loop --ttl 1   
+
+cvlc  rtp://@192.168.1.11:9001/vagrant/video
 
