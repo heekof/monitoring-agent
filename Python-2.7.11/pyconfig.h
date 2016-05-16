@@ -435,7 +435,7 @@
 #define HAVE_LIBINTL_H 1
 
 /* Define if you have the readline library (-lreadline). */
-#define HAVE_LIBREADLINE 1
+/* #undef HAVE_LIBREADLINE */
 
 /* Define to 1 if you have the `resolv' library (-lresolv). */
 /* #undef HAVE_LIBRESOLV */
@@ -552,7 +552,7 @@
 #define HAVE_PUTENV 1
 
 /* Define if the libcrypto has RAND_egd */
-#define HAVE_RAND_EGD 1
+/* #undef HAVE_RAND_EGD */
 
 /* Define to 1 if you have the `readlink' function. */
 #define HAVE_READLINK 1
@@ -561,25 +561,25 @@
 #define HAVE_REALPATH 1
 
 /* Define if you have readline 2.1 */
-#define HAVE_RL_CALLBACK 1
+/* #undef HAVE_RL_CALLBACK */
 
 /* Define if you can turn off readline's signal handling. */
-#define HAVE_RL_CATCH_SIGNAL 1
+/* #undef HAVE_RL_CATCH_SIGNAL */
 
 /* Define if you have readline 2.2 */
-#define HAVE_RL_COMPLETION_APPEND_CHARACTER 1
+/* #undef HAVE_RL_COMPLETION_APPEND_CHARACTER */
 
 /* Define if you have readline 4.0 */
-#define HAVE_RL_COMPLETION_DISPLAY_MATCHES_HOOK 1
+/* #undef HAVE_RL_COMPLETION_DISPLAY_MATCHES_HOOK */
 
 /* Define if you have readline 4.2 */
-#define HAVE_RL_COMPLETION_MATCHES 1
+/* #undef HAVE_RL_COMPLETION_MATCHES */
 
 /* Define if you have rl_completion_suppress_append */
-#define HAVE_RL_COMPLETION_SUPPRESS_APPEND 1
+/* #undef HAVE_RL_COMPLETION_SUPPRESS_APPEND */
 
 /* Define if you have readline 4.0 */
-#define HAVE_RL_PRE_INPUT_HOOK 1
+/* #undef HAVE_RL_PRE_INPUT_HOOK */
 
 /* Define to 1 if you have the `round' function. */
 #define HAVE_ROUND 1

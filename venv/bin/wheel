@@ -1,4 +1,4 @@
-#!/home/ubuntu/monitoring-agent/venv/bin/python
+#!/home/monasca/monitoring-agent/venv/bin/python
 
 # -*- coding: utf-8 -*-
 import re

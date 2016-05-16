@@ -1,77 +1,62 @@
-sudo apt-get install -y \
-autotools-dev      \
-blt-dev            \
-bzip2              \
-dpkg-dev           \
-g++-multilib       \
-gcc-multilib       \
-libbluetooth-dev   \
-libbz2-dev         \
-libexpat1-dev      \
-libffi-dev         \
-libffi6            \
-libffi6-dbg        \
-libgdbm-dev        \
-libgpm2            \
-libncursesw5-dev   \
-libreadline-dev    \
-libsqlite3-dev     \
-libssl-dev         \
-libtinfo-dev       \
-mime-support       \
-net-tools          \
-netbase            \
-python-crypto      \
-python-mox3        \
-python-pil         \
-python-ply         \
-quilt              \
-tk-dev             \
-zlib1g-dev
+sudo apt-get install -y autotools-dev blt-dev bzip2 dpkg-dev g++-multilib gcc-multilib libbluetooth-dev libbz2-dev libexpat1-dev libffi-dev libffi6 libffi6-dbg libgdbm-dev libgpm2 libncursesw5-dev libreadline-dev libsqlite3-dev libssl-dev libtinfo-dev mime-support net-tools netbase python-crypto python-mox3 python-pil python-ply quilt tk-dev zlib1g-dev
 
- cd Python-2.7.11/
-   33  ./configure --prefix /usr/local/lib/python2.7.11 --enable-ipv6
-   34  make
-   35  makesudo make install
-   36  sudo make install
+cd Python-2.7.11/
+./configure --prefix /usr/local/lib/python2.7.11 --enable-ipv6
+make
+makesudo make install
+sudo make install
 
- sudo apt-get install -y  python-pip
-   46  pip install virtualenv
+sudo apt-get install -y  python-pip
+pip install virtualenv
 
 
 sudo apt-get --reinstall install -y language-pack-fr && sudo apt-get --reinstall install -y language-pack-kde-fr && sudo apt-get --reinstall install -y language-pack-en && sudo apt-get --reinstall install -y language-pack-kde-en
 
-   47  sudo pip install virtualenv
 virtualenv -p /usr/local/lib/python2.7.11/bin/python venv
 
 source venv/bin/activate
 
 
 
+cd gearman-2.0.2
+python setup.py install
+cd ../supervisor-3.1.3
 python /setup.py install
+cd ../suds-jurko-0.6
+python setup.py install
+cd ../redis-stable
+python setup.py install
+cd ../ntplib-0.3.3
+python setup.py install
+cd ../simplejson-3.8.2
+python setup.py install
+cd ../tornado-4.3
+python setup.py install
+cd ../PyYAML-3.11
+python setup.py install
+cd ../oslo.vmware-2.6
+python setup.py install
+cd ..
+git clone https://github.com/openstack/monasca-agent
+pip install psutil
+pip install redis
+pip install utils
+pip install python-memcached
+pip install python-memcached
+pip install python-monascaclient
+pip install  pymongo
+pip install httplib2
+cd monasca-agent/
+python setup.py install
+clear
 
-python gearman-2.0.2/setup.py install
-python supervisor-3.1.3/setup.py install
-python suds-jurko-0.6/setup.py install
-python redis-stable/setup.py install
-python ntplib-0.3.3/setup.py install
-python simplejson-3.8.2/setup.py install
-python tornado-4.3/setup.py install
-python PyYAML-3.11/setup.py install
-python oslo.vmware-2.6/setup.py install
-python Python-2.7.11/setup.py install
+ pip install oslo.config oslo.concurrency oslo.i18n oslo.log oslo.middleware oslo.serialization oslo.utils oslo.vmware redis
 
 
- git clone https://github.com/openstack/monasca-agent
-  128  cd monasca-agent/
-  129  python setup.py install
-  130  clear
   131  cd ..
-  132  sudo /home/ubuntu/monitoring-agent/venv/bin/monasca-setup --username mini-mon --password password --project_name mini-mon --service client-str --keystone_url http://157.159.232.218:35357/v3 --monasca_url http://157.159.232.217:8080/v2.0 --overwrite
-  133  pip install utils
- pip install psutil
-  142  sudo /home/ubuntu/monitoring-agent/venv/bin/monasca-setup --username mini-mon --password password --project_name mini-mon --service client-str --keystone_url http://157.159.232.218:35357/v3 --monasca_url http://157.159.232.217:8080/v2.0 --overwrite
-  143  pip install redis
-  144  sudo /home/ubuntu/monitoring-agent/venv/bin/monasca-setup --username mini-mon --password password --project_name mini-mon --service client-str --keystone_url http://157.159.232.218:35357/v3 --monasca_url http://157.159.232.217:8080/v2.0 --overwrite
-  145  pip install python-memcached
+sudo /root/monitoring-agent/venv/bin/monasca-setup --username mini-mon --password password --project_name mini-mon --service streaming-testbed --keystone_url http://157.159.232.218:35357/v3 \
+
+--monasca_url http://157.159.232.217:8070/v2.0 --overwrite
+
+
 

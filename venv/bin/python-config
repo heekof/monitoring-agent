@@ -1,4 +1,4 @@
-#!/home/ubuntu/monitoring-agent/venv/bin/python
+#!/home/monasca/monitoring-agent/venv/bin/python
 
 import sys
 import getopt
