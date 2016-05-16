@@ -63,4 +63,4 @@ sudo /home/vagrant/monitoring-agent/Python-2.7.11/venv/bin/monasca-setup --usern
 nohup cvlc -vvv /vagrant/big_buck_bunny_360p_50mb.flv :norm=ntsc :v4l2-width=320 :v4l2-height=240 :v4l2-standard=45056 :channel=1 --no-sout-audio --sout '#transcode{vb="1600",vcodec=h264,acodec=mpga,venc=ffmpeg}:rtp{proto=udp,mux=ts,dst=192.168.1.11,port=9001}' --loop --ttl 1   &
 
 
- nohup cvlc  -vvv rtp://@192.168.4.41:9001/vagrant/big_buck_bunny_360p_50mb.flv &
+ nohup cvlc  --network-caching 200  -vvv rtp://@192.168.4.41:9001/vagrant/big_buck_bunny_360p_50mb.flv &
