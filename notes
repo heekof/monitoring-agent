@@ -39,15 +39,15 @@ python setup.py install
 ----------------------------------  python setup.py install && cd .. && clear && ls 
 cd ..
 git clone https://github.com/openstack/monasca-agent
-pip install psutil
-pip install redis
-pip install utils
-pip install python-memcached
-pip install python-memcached
-pip install python-monascaclient
-pip install  pymongo
-pip install httplib2
- pip install oslo.config oslo.concurrency oslo.i18n oslo.log oslo.middleware oslo.serialization oslo.utils oslo.vmware redis
+sudo pip install psutil
+sudo pip install redis
+sudo pip install utils
+sudo pip install python-memcached
+sudo pip install python-memcached
+sudo pip install python-monascaclient
+sudo pip install  pymongo
+sudo pip install httplib2
+sudo pip install oslo.config oslo.concurrency oslo.i18n oslo.log oslo.middleware oslo.serialization oslo.utils oslo.vmware redis
 
 cd monasca-agent/
 python setup.py install
