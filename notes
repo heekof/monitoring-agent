@@ -5,7 +5,7 @@ sudo apt-get install -y git && git clone https://github.com/heekof/monitoring-ag
 cd monitoring-agent && cd Python-2.7.11/ && ./configure --prefix /usr/local/lib/python2.7.11 --enable-ipv6 && make && sudo make install
 sudo apt-get install -y  python-pip && sudo pip install virtualenv 
 
-cd Python-2.7.11/ && ./configure --prefix /usr/local/lib/python2.7.11 --enable-ipv6 && make && sudo make install
+ ./configure --prefix /usr/local/lib/python2.7.11 --enable-ipv6 && make && sudo make install
 sudo apt-get --reinstall install -y language-pack-fr && sudo apt-get --reinstall install -y language-pack-kde-fr && sudo apt-get --reinstall install -y language-pack-en && sudo apt-get --reinstall install -y language-pack-kde-en
 
 virtualenv -p /usr/local/lib/python2.7.11/bin/python venv
