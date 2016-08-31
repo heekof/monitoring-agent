@@ -37,8 +37,7 @@ python setup.py install
 cd ../oslo.vmware-2.6
 python setup.py install
 ----------------------------------  python setup.py install && cd .. && clear && ls 
-cd ..
-git clone https://github.com/openstack/monasca-agent
+
 
 sudo apt-get install python-dev
 sudo pip install psutil
@@ -57,6 +56,8 @@ sudo pip install urllib3
 sudo pip install netifaces
 
 
+cd ..
+git clone https://github.com/openstack/monasca-agent
 cd monasca-agent/
 python setup.py install
 clear
