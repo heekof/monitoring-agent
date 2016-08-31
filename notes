@@ -65,7 +65,7 @@ clear
 
 
   131  cd ..
-sudo /home/ubuntu/monitoring-agent/venv/bin/monasca-setup --username mini-mon --password password --project_name Clearwater --service NFV-SDN-testbed --keystone_url http://157.159.232.218:35357/v3 --monasca_url http://157.159.232.217:8070/v2.0 --overwrite
+sudo /home/ubuntu/monitoring-agent/venv/bin/monasca-setup --username mini-mon --password password --project_name mini-mon --service NFV-SDN-testbed --keystone_url http://157.159.232.218:35357/v3 --monasca_url http://157.159.232.217:8070/v2.0 --overwrite
 
 ------- streaming with Vlc 
 
