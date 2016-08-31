@@ -51,7 +51,7 @@ sudo pip install  pymongo
 sudo pip install httplib2
 sudo pip install oslo.config oslo.concurrency oslo.i18n oslo.log oslo.middleware oslo.serialization oslo.utils oslo.vmware redis
 sudo pip install gevent
-sudo apt-get install libxml2-dev libxslt-dev
+sudo apt-get install -y libxml2-dev libxslt-dev
 sudo pip install lxml
 sudo pip install urllib3
 sudo pip install netifaces
